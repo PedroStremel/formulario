@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!--aqui eu aviso para o algoritmo de que esse arquivo eh html-->
+<html lang="pt-BR"> <!--essa tag serve para o mecanismo de busca entender que meu site esta em portugues-->
+    <head>
+        <title>Formulario de contato</title>
+        <description> Um formulario de contato.</description> <!--com esse codigo eu adiciono a descricao do site antes do usuario abrir-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body> <!--essa tag eh onde tudo que vai dentro da pagina-->
+        <section>
+            <h2>Formulario de contato</h2>
+            <form id="contact-form">
+                <div class="form-input"> <!--defini todas as minhas divs com uma class, para nomea-las e conseguir usar no css-->
+                    <label>Nome</label> <!--aqui para dar nome ao input-->
+                    <input name="name" type="text" /> <!--aqui eu usei uma tag de input, e dentro dela eu especifiquei o tipo de informacao que ela vai receber, e como n vou ter mais nada entre as tag, eu posso fechar ela, nela mesma-->
+                </div>
+                <div class="form-input">
+                    <label>e-mail</label> 
+                    <input name="email" type="email" /> 
+                </div>
+                <div class="form-input">
+                    <label>Mensagem:</label> 
+                    <input name="message" type="text" /> 
+                </div>
+                <input type="submit" value="Enviar" /> <!--coloquei um botao do tipo submit, e atribui o valor `enviar`-->
+            </form>
+        </section>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
